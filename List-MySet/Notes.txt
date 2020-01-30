@@ -1,0 +1,6 @@
+* Nous avons mal compris (et donc mal implémenté) le fonctionnement de la méthode size() de MySet. On l'avait faite pour compter le nombre de SubSet alors qu'il s'agit en fait 
+de compter le nombre d'éléments dans chacun des SmallSet (j'ai remarqué ça en voyant que les tests ne passaient pas)
+* Fonction add : Modification de la valeur min
+* Fonction addNumber : Erreur au niveau de la condition d'arrêt de la boucle while car au tout début, on n'a que le flag donc on n'arrive jamais à faire d'ajouts. Et pour les insertions
+suivantes, quand il revient sur la flag, il sort de la boucle sans avoir fait d'insertion donc il nous manquait juste une itération en plus au moment où on est sur le flag. 
+
